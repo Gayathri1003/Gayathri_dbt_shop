@@ -1,0 +1,10 @@
+sources:
+  - name: src_shop
+    database: DBT_GAYATHRI_SHOP
+    schema: RAW_SCHEMA_SHOP
+    tables:
+      - name: customers
+      - name: products
+      - name: orders
+      - name: order_items
+      - name: payments
