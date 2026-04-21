@@ -2,7 +2,7 @@ select
     o.order_id,
     o.customer_id,
     oi.order_value
-from {{ ref('stg_orders') }} o
+from {{ ref('int_orders') }} o
 join (
 
     select
