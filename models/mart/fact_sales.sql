@@ -2,12 +2,12 @@ select
     o.order_id,
     o.customer_id,
     oi.order_value
-from {{ ref('int_orders') }} o
+from {{ ref('int_orders_enriched') }} o
 join (
 
     select
         order_id,
-        sum(quantity * price) as order_value
+        sum({{calculate_revenue('quantity','price')}}) as order_value
     from {{ ref('stg_order_items') }}
     group by order_id
 
