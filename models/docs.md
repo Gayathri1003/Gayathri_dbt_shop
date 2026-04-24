@@ -13,7 +13,7 @@ Each record represents **one order**.
 One row per **order_id**.
 
 ### Upstream Models
-stg_orders
+int_orders_enriched
 stg_order_items
 
 ### Downstream Usage
