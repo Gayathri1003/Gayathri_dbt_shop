@@ -1,8 +1,3 @@
-{{
-    config(
-        materialized = 'view'
-    )
-}}
 select
     c.customer_id,
     c.customer_name,
