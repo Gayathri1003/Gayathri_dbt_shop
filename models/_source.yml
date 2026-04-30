@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: src_shop
-    database: DBT_GAYATHRI_SHOP
+    database: DBT_ECOMMERCE
     schema: RAW_SCHEMA_SHOP
 
     tables:
