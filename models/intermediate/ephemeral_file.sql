@@ -1,0 +1,6 @@
+{{
+    config(
+        materialized='ephemeral'
+    )
+}}
+select cust_id, customer_name from {{ source('src_shop', 'customers') }}
