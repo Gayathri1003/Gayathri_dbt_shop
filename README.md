@@ -1,1 +1,1 @@
-# Gayathri_dbt_shop
+# dbt_Ecommerce_Demo
